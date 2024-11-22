@@ -18,7 +18,7 @@ gameSelector.addEventListener("change",function(){
             break;
         case "RPS":
             RPS();
-            break
+            break;
         
         
         
