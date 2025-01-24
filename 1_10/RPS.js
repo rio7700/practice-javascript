@@ -38,12 +38,12 @@ function RPS(){
     let image = document.createElement("img");
     image.alt = "Choice";
     image.style.width = "300px";
-    image.style.height ="300px";
+    image.style.height ="400px";
 
     let enemyImage = document.createElement("img");
     enemyImage.alt="choice";
     enemyImage.style.width = "300px";
-    enemyImage.style.height ="600px";
+    enemyImage.style.height ="400px";
 
 
     choicebutton.addEventListener("click",function(){
