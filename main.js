@@ -68,9 +68,16 @@ button.addEventListener("click",function(){
         }else{(randomNumber > val)
             message.textContent="ちっさ"
         }    
-
+        count++;
+        countDisplay.textContent='試行回数:${count}';
     })
     gameContainer.appendChild(button);
+
+    let count = 0;
+    const countDisplay = document.createElenebt
+countDispjay.twxtCountent='試行回数:${count}';
+gameContainer.appendChild(is)
+
 
 }
 
