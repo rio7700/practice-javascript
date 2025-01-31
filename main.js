@@ -1,3 +1,19 @@
+const gameSelecter = document.getElementById('game-select');
+const gameContainer=document.getElementById("game-container");
+gameSelecter.addEventListener('change',function(){
+    gameContainer.innerHTML='';
+    switch(gameSelecter.value){
+        case 'number-guess':
+            startNumberGuessGame();
+            break;
+        case'clicker':
+        ClickCounterGame();
+        break;
+    }
+});
+
+
+
 function ClickCounterGame(){
      let count=0;      
  const gameContainer=document.getElementById("game-container");
@@ -41,7 +57,7 @@ function ClickCounterGame(){
  gameContainer.appendChild(button3);
  gameContainer.appendChild(counter);
  }
- ClickCounterGame();
+
 
 
 function startNumberGuessGame(){
@@ -55,9 +71,8 @@ function startNumberGuessGame(){
     gameContainer.appendChild(message);
     gameContainer.appendChild(input)
     
-
-let button = document.createElement("button");
-button.textContent = "確認"
+    let button = document.createElement("button");
+    button.textContent = "確認"
 
 button.addEventListener("click",function(){
     const val = parseInt(input.value);
@@ -69,16 +84,18 @@ button.addEventListener("click",function(){
             message.textContent="ちっさ"
         }    
         count++;
-        countDisplay.textContent='試行回数:${count}';
+        countDisplay.textContent=`試行回数:${count}`;
     })
     gameContainer.appendChild(button);
-
+    
     let count = 0;
-    const countDisplay = document.createElenebt
-countDispjay.twxtCountent='試行回数:${count}';
-gameContainer.appendChild(is)
+    
+    const countDisplay = document.createElenebt("p");
+    
+    countDispjay.textCountent=`試行回数:${count}`;
+    
+    gameContainer.appendChild(countDisplay);
 
 
 }
 
-startNumberGuessGame();
